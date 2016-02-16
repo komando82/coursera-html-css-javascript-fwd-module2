@@ -1,0 +1,78 @@
+/*
+ * Desktop >= 992px 
+ * Tablet >= 768px && < 992px
+ * Mobile < 768px
+ */
+
+body {
+ 	font-family: Verdana, Arial, sans-serif;
+ 	margin: 0;
+ 	padding: 0;
+}
+
+h2 {
+ 	text-align: center;
+ 	padding: 0 15px;
+}
+
+.container {
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+.image-box {
+	border: 1px solid #000;
+	box-sizing: border-box;
+	text-align: center;
+	position: relative;
+	margin: 20px auto;
+	max-width: 400px;
+}
+
+.image-box img {
+	display: block;
+	max-width: 100%;
+	width: 100%;
+}
+
+.image-title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	background: rgba(255, 0, 0, 0.3);
+}
+
+@media screen and (min-width:767px) {
+	.container {
+		padding: 0;
+	}
+	.image-box {
+		width: 48%;
+		margin: 1%;
+		float: left;
+		max-width: none;
+	}
+	.image-box.third {
+		margin-left: 26%;
+	}
+}
+
+@media screen and (min-width:991px) {
+	.image-box {
+		width: 31.33%;
+		margin: 1%;
+	}
+	.image-box.third {
+		margin: 1%;
+	}
+}
+
+
+
+
+
+
+
+
