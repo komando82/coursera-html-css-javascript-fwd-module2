@@ -13,6 +13,7 @@ body {
 h2 {
  	text-align: center;
  	padding: 0 15px;
+ 	font-size: 175%;
 }
 
 .container {
@@ -20,52 +21,64 @@ h2 {
 	box-sizing: border-box;
 }
 
-.image-box {
+.text-box {
 	border: 1px solid #000;
 	box-sizing: border-box;
-	text-align: center;
 	position: relative;
 	margin: 20px auto;
 	max-width: 400px;
+	background: #D3D3D3;
+	height: 100%;
 }
 
-.image-box img {
-	display: block;
-	max-width: 100%;
-	width: 100%;
+.text-box p {
+	margin: 45px 10px 15px;
 }
 
-.image-title {
+.text-title {
 	position: absolute;
 	top: 0;
-	left: 0;
-	width: 100%;
+	right: 0;
+	width: 30%;
 	text-align: center;
-	background: rgba(255, 0, 0, 0.3);
+	background: #BA55D3;
+	padding: 5px 0;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+	font-size: 125%;
 }
 
-@media screen and (min-width:767px) {
+.second .text-title {
+	background: #DC143C;
+	color: #fff;
+}
+
+.third .text-title {
+	background: #FFD700;
+}
+
+@media screen and (min-width:768px) {
 	.container {
 		padding: 0;
 	}
-	.image-box {
+	.text-box {
 		width: 48%;
 		margin: 1%;
 		float: left;
 		max-width: none;
 	}
-	.image-box.third {
-		margin-left: 26%;
+	.text-box.third {
+		width: 98%;
 	}
 }
 
-@media screen and (min-width:991px) {
-	.image-box {
+@media screen and (min-width:992px) {
+	.text-box {
 		width: 31.33%;
 		margin: 1%;
 	}
-	.image-box.third {
-		margin: 1%;
+	.text-box.third {
+		width: 31.33%;
 	}
 }
 
